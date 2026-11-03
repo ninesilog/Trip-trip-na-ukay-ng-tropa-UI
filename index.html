@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>UKAY NI JUVINARD POGI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=Permanent+Marker&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- buyer -->
+    <div id="shop">
+      <div class="ticker" aria-label="Bili na mga sah">
+      <span>bilii po kayo UKAY at lumpiang gulay shanghai baboy pampatibay ng ka-relasyon.?
+bili na po kayo kahit dalawa lang po para makabenta na po kami.!
+ang gwapo gwapo nio nga po kamukha nio nga si ding dong dantis.
+kahit di nio po sila kamukha, gwapo parin po kayu. kuya ilaw ka ba kasi nakakasilaw kagwapuhan niu. bili na po kayo kahit dalawa lang po para makabenta na po kami.😌</span>
+      </div>
+
+      <header class="head wrap">
+      <div class="brand">
+          <!-- webp with png fallback -->
+          <picture class="logo">
+            <source srcset="Images/Logo/logo.webp" type="image/webp" />
+            <img src="Images/Logo/Logo.png" alt="Nardo’s" width="1024" height="403" />
+          </picture>
+        </div>
+      </header>
+
+      <!-- bundle banner -->
+      <div class="wrap" id="bwrap"></div>
+
+      <div class="wrap">
+        <section class="filters box">
+          <nav class="tabs" id="tabs" aria-label="Channels"></nav>
+          <div class="chips" id="chips" aria-label="Categories"></div>
+
+          <div class="tools">
+            <label for="size">Size</label>
+            <select id="size"></select>
+            <label for="sort">Sort</label>
+            <select id="sort">
+              <option value="n">Newest</option>
+              <option value="a">Lowest price</option>
+              <option value="d">Highest price</option>
+            </select>
+            <button data-a="tgl" id="tgbtn">Tags</button>
+            <span class="count" id="count"></span>
+          </div>
+
+          <section id="tgpanel" hidden></section>
+        </section>
+      </div>
+
+      <main class="wrap">
+        <section class="catalog box">
+          <div class="grid" id="grid"></div>
+        </section>
+      </main>
+
+      <footer class="wrap foot box">
+        <div>Follow Nardo</div>
+        <div id="soc"></div>
+        <button class="lnk" data-a="adopen">Admin</button>
+      </footer>
+
+      <div class="bar">
+        <span id="bartxt">Your bag is empty</span>
+        <button data-a="bagv">View bag</button>
+      </div>
+    </div>
+
+    <!-- admin side -->
+    <section id="admin" class="wrap"></section>
+    <button id="fab" data-a="adopen">Back to admin</button>
+
+    <!-- popup -->
+    <div class="sheet" id="sheet">
+      <div class="panel box" id="panel">
+        <div id="body"></div>
+        <button class="x" data-a="x">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
